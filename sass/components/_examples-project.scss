@@ -1,0 +1,115 @@
+.examples-project__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  
+.examples-project__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+.examples-project__item {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .examples-project__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  
+  .examples-project__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+  
+  .examples-project__link {
+    display: inherit;
+  
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .examples-project__link:hover,
+  .examples-project__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .examples-project__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 370px;
+    height: 294px;
+    display: flex;
+    margin: 0;
+  
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+  
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  
+  .examples-project__link:hover .examples-project__overlay,
+.examples-project__link:focus .examples-project__overlay {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+.examples-project__text {
+    margin: 0;
+    padding: 63px 24px;
+  
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+  
+    color: var(--tertiary-color-text);
+  }
+  
+  .examples-project__wraper {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+    border-top: transparent;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .examples-project__img {
+    display: block;
+  }
+  
+  .examples-project__subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+    color: var(--secondary-color-text);
+    font-weight: var(--secondary-font-weight);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .examples-project__desc {
+    margin-top: 4px;
+    margin-bottom: 0px;
+  
+    font-size: var(--primary-font-size);
+    line-height: 1.9;
+    color: var(--primary-color-text);
+  }
+  

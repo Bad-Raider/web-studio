@@ -1,0 +1,23 @@
+.footer {
+    background-color: var(--tertiary-background-page);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .footer__title {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  
+    color: var(--primary-background-page);
+    font-weight: var(--secondary-font-weight);
+    font-size: 14px;
+    line-height: var(--primary-line-height);
+    text-transform: uppercase;
+  }
+  
