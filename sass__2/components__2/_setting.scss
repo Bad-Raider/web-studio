@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: var(--primary-color-text);
+    background-color: var(--primary-background-page);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+    
+  a {
+    text-decoration: none;
+  }
+    
+  li {
+    list-style-type: none;
+  }
+    
+  ul {
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
