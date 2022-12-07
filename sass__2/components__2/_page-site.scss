@@ -2,13 +2,20 @@
     display: none;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 93px;
     padding-left: 0px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      }  
+
   }
   
 .page-site__item {
     display: block;
-    margin-right: 50px;
+    
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
 .page-site__link {

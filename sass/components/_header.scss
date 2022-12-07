@@ -2,8 +2,11 @@ header {
     border-bottom: 1px solid #ececec;
   }
   
-.container--flex,
-.nav {
+.container--flex {
   display: flex;
   align-items: center;
+}
+
+.nav {
+  display: flex;
 }

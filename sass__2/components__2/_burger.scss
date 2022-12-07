@@ -1,0 +1,29 @@
+
+.nav__button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border: transparent;
+    background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+     fill: var(--accent-color);
+    } 
+      // tablet
+      @media screen and (min-width: 768px) {
+      display: none;
+      }  
+  }
+
+
+.contact__burger {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    outline: red solid 2px;
+}

@@ -1,15 +1,23 @@
 .contact {
     display: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-left: 0px;
+    // margin-top: 0px;
+    // margin-bottom: 0px;
+    // margin-left: auto;
+    // padding-left: 0px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      }  
+
   }
   
 .contact__item {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin-right: 50px;
+    &:not(:last-child) {
+    margin-bottom: 10px;
+    }
+    // margin-right: 50px;
   }
   
 .contact__link {
@@ -17,8 +25,8 @@
     align-items: center;
     justify-content: center;
   
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   
     color: var(--primary-color-text);
     font-weight: var(--primary-font-weight);
