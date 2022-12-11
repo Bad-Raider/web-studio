@@ -8,13 +8,15 @@
   .footer-flex {
     text-align: center;
 
-  //   @media screen and (min-width: ) {
+  // Desktop
+  @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
       
-  //   }
-  //   display: flex;
-  //   align-items: baseline;
-  //   justify-content: space-between;
-  }
+    text-align: start;
+    }
+}
 
   .footer-info {
     display: inline-block;
@@ -45,7 +47,6 @@
   }
 
   .footer__wraper {
-    
     justify-content: space-around;
     align-items: baseline;
 
@@ -58,5 +59,4 @@
     @media screen and (min-width:1200px) {
       display: inline-flex;
     }
-  
   }

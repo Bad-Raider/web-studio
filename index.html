@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <!-- Контент -->
   <body>
@@ -30,23 +30,40 @@
           </a>
 
           <ul class="page-site">
-            <li class="page-site__item"><a href="" class="page-site__link current">Студія</a></li>
+            <li class="page-site__item">
+              <a href="" class="page-site__link current">Студія</a>
+            </li>
             <li class="page-site__item">
               <a href="./portfolio.html" class="page-site__link">Портфоліо</a>
             </li>
-            <li class="page-site__item"><a href="" class="page-site__link">Контакти</a></li>
+            <li class="page-site__item">
+              <a href="" class="page-site__link">Контакти</a>
+            </li>
           </ul>
-          <button type="button" class="nav__button">
-            <svg class="nav__icon" width="40" height="40">
-              <use
-                href="./images/decoration-img/icons.svg#icon-burger"
-              ></use>
-              <use
-                href="./images/decoration-img/icons.svg#icon-close-cross"
-              ></use>
+          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка виклику меню"
+            >
+              <use  class="nav__icon-burger" href="./images/decoration-img/icons.svg#icon-burger"></use>
             </svg>
           </button>
-  
+          <div class="menu-container js-menu-container " id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка закриття меню"
+            >
+              <use class="nav__icon-close-cross" 
+                href="./images/decoration-img/icons.svg#icon-close-cross"
+              ></use>
+
+            </svg>
+
+            </button> 
+          </div> 
         </nav>
 
         <ul class="contact">
@@ -71,7 +88,6 @@
       </div>
     </header>
     <main>
-
       <!-- hero -->
 
       <section class="section hero">
@@ -93,9 +109,9 @@
               <!-- форма модального вікна  -->
 
               <form class="form">
-                <h2 class="form__title"
-                  >Залиште свої дані, ми вам передзвонимо</h2
-                >
+                <h2 class="form__title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
                 <label class="form__label">
                   Ім'я
                   <input type="name" class="form__intup" />
@@ -199,19 +215,21 @@
 
       <section class="section section-project">
         <div class="container">
-          <h2 class="section-project__title">
-            Чим ми займаємося
-          </h2>
+          <h2 class="section-project__title">Чим ми займаємося</h2>
           <ul class="section-project__list">
             <li class="section-project__item">
               <div class="section-project__wraper">
                 <img
                   class="section-project__img"
-                  src="./images/other/computer.jpg"
+                  srcset="
+                    ./images/other/computer-300.jpg 300w,
+                    ./images/other/computer-600.jpg 600w
+                  "
+                  sizes="370px"
+                  src="./images/other/computer-300.jpg"
                   alt="Комп'ютер"
-                  width="370"
-                  height="294"
                 />
+
                 <p class="section-project__text">Десктопні додатки</p>
               </div>
             </li>
@@ -219,10 +237,13 @@
               <div class="section-project__wraper">
                 <img
                   class="section-project__img"
-                  src="./images/other/phone.jpg"
-                  alt="Телефон"
-                  width="370"
-                  height="294"                 
+                  srcset="
+                    ./images/other/phone-300.jpg 300w,
+                    ./images/other/phone-600.jpg 600w
+                  "
+                  sizes="370px"
+                  src="./images/other/phone-300.jpg"
+                  alt="Мобільний телефон в руці"
                 />
                 <p class="section-project__text">Мобільні додатки</p>
               </div>
@@ -231,10 +252,13 @@
               <div class="section-project__wraper">
                 <img
                   class="section-project__img"
-                  src="./images/other/table.jpg"
+                  srcset="
+                    ./images/other/table-300.jpg 300w,
+                    ./images/other/table-600.jpg 600w
+                  "
+                  sizes="370px"
+                  src="./images/other/table-300.jpg"
                   alt="Планшетний комп'ютер"
-                  width="370"
-                  height="294"
                 />
                 <p class="section-project__text">Дизайнерські рішення</p>
               </div>
@@ -251,9 +275,14 @@
           <ul class="section-staff__list">
             <li class="section-staff__item">
               <img
-                src="./images/staff/ihor.jpg"
-                alt="Ігор Дем'яненко"
                 class="section-staff__img"
+                srcset="
+                  ./images/staff/ihor-300.jpg 300w,
+                  ./images/staff/ihor-600.jpg 600w
+                "
+                sizes="370px"
+                src="./images/staff/ihor-300.jpg"
+                alt="Фотографія Ігора Дем'яненка"
               />
               <div class="section-staff__wraper">
                 <h3 class="section-staff__subtitle">Ігор Дем'яненко</h3>
@@ -280,7 +309,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-twitter"
                         ></use>
@@ -294,7 +327,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-facebook"
                         ></use>
@@ -308,7 +345,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-linkedin"
                         ></use>
@@ -320,9 +361,14 @@
             </li>
             <li class="section-staff__item">
               <img
-                src="./images/staff/olha.jpg"
-                alt="Фото Ольга Рєпіна"
                 class="section-staff__img"
+                srcset="
+                  ./images/staff/olha-300.jpg 300w,
+                  ./images/staff/olha-600.jpg 600w
+                "
+                sizes="370px"
+                src="./images/staff/olha-300.jpg"
+                alt="Фотографія Ольги Репєної"
               />
               <div class="section-staff__wraper">
                 <h3 class="section-staff__subtitle">Ольга Рєпіна</h3>
@@ -349,7 +395,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-twitter"
                         ></use>
@@ -363,7 +413,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-facebook"
                         ></use>
@@ -377,7 +431,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-linkedin"
                         ></use>
@@ -389,9 +447,14 @@
             </li>
             <li class="section-staff__item">
               <img
-                src="./images/staff/mykola.jpg"
-                alt="Фото Микола Тарасов"
                 class="section-staff__img"
+                srcset="
+                  ./images/staff/mykola-300.jpg 300w,
+                  ./images/staff/mykola-600.jpg 600w
+                "
+                sizes="370px"
+                src="./images/staff/mykola-300.jpg"
+                alt="Фотографія Миколи Тарасова"
               />
               <div class="section-staff__wraper">
                 <h3 class="section-staff__subtitle">Микола Тарасов</h3>
@@ -418,7 +481,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-twitter"
                         ></use>
@@ -432,7 +499,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-facebook"
                         ></use>
@@ -447,7 +518,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-linkedin"
                         ></use>
@@ -459,9 +534,14 @@
             </li>
             <li class="section-staff__item">
               <img
-                src="./images/staff/mykhailo.jpg"
-                alt="Фото Михайло Єрмаков"
                 class="section-staff__img"
+                srcset="
+                  ./images/staff/mykhailo-300.jpg 300w,
+                  ./images/staff/mykhailo-600.jpg 600w
+                "
+                sizes="370px"
+                src="./images/staff/mykhailo-300.jpg"
+                alt="Фотографія Михайла Єрмакова"
               />
               <div class="section-staff__wraper">
                 <h3 class="section-staff__subtitle">Михайло Єрмаков</h3>
@@ -488,7 +568,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-twitter"
                         ></use>
@@ -502,7 +586,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-facebook"
                         ></use>
@@ -517,7 +605,11 @@
                       rel="noopener noreferrer nofollow"
                       class="social-network__link social-network__link--color"
                     >
-                      <svg class="social-network__icon" width="20px" height="20px">
+                      <svg
+                        class="social-network__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use
                           href="./images/decoration-img/icons.svg#icon-linkedin"
                         ></use>
@@ -542,8 +634,7 @@
                 <svg class="customer__logo" width="106" height="60">
                   <use
                     href="./images/decoration-img/icons.svg#icon-ya-co"
-                  ></use>
-                  </svg              ></a>
+                  ></use></svg              ></a>
             </li>
             <li class="customer__item">
               <a href="" class="customer__link">
@@ -600,89 +691,89 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer__wraper">
-        <div class="footer-info">
-          <a href="" class="logo logo--color"
-            ><span class="logo__span">Web</span>Studio</a
-          >
-          <address class="address">
-            <a
-              href="http://surl.li/bjvcs"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="address__post"
+          <div class="footer-info">
+            <a href="" class="logo logo--color"
+              ><span class="logo__span">Web</span>Studio</a
             >
-              Київ, пр-т Лесі Українки, 26</a
-            >
-            <a href="mailto:info@devstudio.com" class="address__contact"
-              >info@devstudio.com</a
-            >
-            <a href="tel:+380662408401" class="address__contact"
-              >+38 066 240 84 01</a
-            >
-          </address>
+            <address class="address">
+              <a
+                href="http://surl.li/bjvcs"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="address__post"
+              >
+                Київ, пр-т Лесі Українки, 26</a
+              >
+              <a href="mailto:info@devstudio.com" class="address__contact"
+                >info@devstudio.com</a
+              >
+              <a href="tel:+380662408401" class="address__contact"
+                >+38 066 240 84 01</a
+              >
+            </address>
+          </div>
+          <div class="footer__social-network">
+            <h2 class="footer__title">приєднуйтесь</h2>
+            <ul class="social-network">
+              <li class="social-network__item social-network__item--background">
+                <a
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="social-network__link social-network__link--fill"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/decoration-img/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item social-network__item--background">
+                <a
+                  href="http://twitter"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="social-network__link social-network__link--fill"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/decoration-img/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item social-network__item--background">
+                <a
+                  href="http://facebook"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="social-network__link social-network__link--fill"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/decoration-img/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item social-network__item--background">
+                <a
+                  href="http://linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="social-network__link social-network__link--fill"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/decoration-img/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__social-network">
-          <h2 class="footer__title">приєднуйтесь</h2>
-          <ul class="social-network">
-            <li class="social-network__item social-network__item--background" >
-              <a
-                href="http://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="social-network__link social-network__link--fill"
-              >
-                <svg width="20px" height="20px">
-                  <use
-                    href="./images/decoration-img/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__item social-network__item--background" >
-              <a
-                href="http://twitter"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="social-network__link social-network__link--fill"
-              >
-                <svg width="20px" height="20px">
-                  <use
-                    href="./images/decoration-img/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__item social-network__item--background" >
-              <a
-                href="http://facebook"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="social-network__link social-network__link--fill"
-              >
-                <svg width="20px" height="20px">
-                  <use
-                    href="./images/decoration-img/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__item social-network__item--background" >
-              <a
-                href="http://linkedin"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="social-network__link social-network__link--fill"
-              >
-                <svg width="20px" height="20px">
-                  <use
-                    href="./images/decoration-img/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
         <form class="footer-form">
           <label for="footer-mail" class="footer-form__label">
             Підпишіться на розсилку</label
@@ -708,6 +799,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/button-burger.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
