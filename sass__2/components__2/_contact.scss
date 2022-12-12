@@ -1,20 +1,30 @@
 .contact {
-    display: none;
-    // margin-top: 0px;
-    // margin-bottom: 0px;
-    // margin-left: auto;
-    // padding-left: 0px;
 
+    // mobil
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      bottom: 134px;
+      left: 40px;     
+    }
+    
+    // Tablet
     @media screen and (min-width: 768px) {
       display: block;
-      }  
-    
+      }
+
+    // Desktop
     @media screen and (min-width: 1200px) {
     display: flex;
     }  
-  
-
   }
+
+// Mobil
+  .contact--none {
+  @media screen and (max-width: 767px) {
+  display: none;
+  }
+}
+
   
 .contact__item {
     display: flex;
@@ -24,6 +34,14 @@
     margin-bottom: 10px;
     }
 
+    // Mobil
+    @media screen and (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+        }
+    }
+
+    // Desktop
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
         margin-bottom: 0px;
@@ -32,11 +50,7 @@
     }  
 }
   
-.contact__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-   
+.contact__link {   
     color: var(--primary-color-text);
     font-weight: var(--primary-font-weight);
     line-height: var(--primary-line-height);
@@ -49,11 +63,30 @@
       color: var(--accent-color);
     }
 
+    //Mobil 
+    @media screen and (max-width: 768px) {
+      font-size: 34px;
+    }
+      
+    //Tablet 
+    @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+    //Desktop 
     @media screen and (min-width: 1200px) {
      padding-top: 32px;
-      padding-bottom: 32px;
-
+     padding-bottom: 32px;
     }
+}
+
+.contact__link--size{
+  font-size: 24px;
+}
+
+.contact__link--color {
+  color: var(--accent-color);
 }
   
 .contact__icon {

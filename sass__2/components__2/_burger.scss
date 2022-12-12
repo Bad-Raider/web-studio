@@ -28,12 +28,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80%;
+  height: 100%;
 
   padding: 40px;
 
-  background-color: tomato;
-  // background-color: var(--primary-background-page);
+  background-color: var(--primary-background-page);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;

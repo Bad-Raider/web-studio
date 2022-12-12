@@ -5,6 +5,7 @@
 
     padding-top: 118px;
     padding-bottom: 118px;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -32,7 +33,7 @@
       }
     }
 
-    // Tablet
+  //   // Tablet
       @media screen and (min-width: 768px) {
       width: 768px;
 
@@ -58,14 +59,14 @@
     }
   }
 
-    // desktop
+    // Desktop
     @media screen and (min-width: 1200px) {
       width: 1600px;
       height: 600px;
 
       padding-top: 200px;
       padding-bottom: 200px;
-
+  
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -73,10 +74,9 @@
       
       url("/images/decoration-img/hero-desktop.jpg");
       background-size: cover;
-
     }  
 
-    // retina
+  // retina
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -92,13 +92,10 @@
 
 }  
 
-
-  
-
   .hero__title {
     display: block;
     width: 360px;
-    height: 84px;
+    // height: 84px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;

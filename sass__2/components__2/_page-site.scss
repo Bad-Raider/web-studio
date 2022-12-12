@@ -1,37 +1,55 @@
 .page-site {
-    // display: none;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 51px;
-
-    @media screen and (max-width: 768px) {
+    
+    // mobil
+    @media screen and (max-width: 767px) {
       position: absolute;
-      }  
+      top: 48px;
+      left: 40px;     
+    }
 
-
+    // Tablet
     @media screen and (min-width: 768px) {
       display: flex;
-      }  
+      margin-left: 51px;
+    }  
 
-      @media screen and (min-width:1200px) {
-        margin-left: 93px;
-        
-      }
-  
+    // Desktop
+    @media screen and (min-width:1200px) {
+      margin-left: 93px;
+    } 
+} 
+
+// Mobil
+.page-site--none {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-  
+}
+
+// Mobil
 .page-site__item {
-    display: block;
-    
-    &:not(:last-child) {
-      margin-right: 50px;
+
+  // Mobil
+    @media screen and (max-width:768px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }  
     }
-  }
+  //Tablet 
+    @media screen and (min-width:768px) {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }  
+    }
+
+}
 
 .page-site__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
+
+    font-size: 40px;
+    
     color: var(--secondary-color-text);
     font-weight: var(--primary-font-weight);
     line-height: var(--primary-line-height);
@@ -44,13 +62,29 @@
       color: var(--accent-color);
     }
 
+    //Mobil
+    @media screen and (min-width:768px) {
+      font-size: inherit;
+      }  
+    
+    //Tablet
+    @media screen and (min-width:768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      }  
   }
   
+// Tablet + Desktop
 .page-site__link.current {
-    color: var(--accent-color);
-    position: relative;
+    @media screen and (min-width: 768px) {
+      color: var(--accent-color);
+      position: relative;
+    }
 }
-  .page-site__link.current::after {
+
+// Tablet + Desktop
+.page-site__link.current::after {
+  @media screen and (min-width: 768px) {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -61,4 +95,5 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+}
   
