@@ -15,7 +15,7 @@
   
   .advantage__item {
     display: block;
-    width: 450px;
+    max-width: 450px;
 
   // mobil
     @media screen and (max-width: 767px) {

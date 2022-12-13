@@ -1,7 +1,7 @@
 
 .hero {
-    width: 480px;
-    height: 400px;
+    max-width: 480px;
+    max-height: 400px;
 
     padding-top: 118px;
     padding-bottom: 118px;
@@ -35,7 +35,7 @@
 
   //   // Tablet
       @media screen and (min-width: 768px) {
-      width: 768px;
+      max-width: 768px;
 
       background-image: linear-gradient(
         to right,
@@ -61,8 +61,8 @@
 
     // Desktop
     @media screen and (min-width: 1200px) {
-      width: 1600px;
-      height: 600px;
+      max-width: 1600px;
+      max-height: 600px;
 
       padding-top: 200px;
       padding-bottom: 200px;
@@ -94,7 +94,7 @@
 
   .hero__title {
     display: block;
-    width: 360px;
+    max-width: 360px;
     // height: 84px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -120,8 +120,8 @@
     // desktop
     @media screen and (min-width: 1200px) {
     
-      width: 696px;
-      height: 120px;
+      max-width: 696px;
+      max-height: 120px;
       }
   
   }

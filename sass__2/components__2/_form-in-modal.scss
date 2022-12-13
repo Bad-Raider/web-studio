@@ -12,7 +12,7 @@
   .form__label {
     position: relative;
     display: block;
-    width: 448px;
+    width: 100%;
     height: auto;
     padding-bottom: 10px;
   
@@ -20,6 +20,12 @@
     font-size: 12px;
     line-height: var(--primary-line-height);
     letter-spacing: 0.01em;
+
+
+    // Desktop
+    @media screen and (min-width: 1200px) {
+      width: 448px
+    }
   }
   
   .form__label--margin-padding {
@@ -30,7 +36,7 @@
   
   .form__textarea {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 120px;
   
     margin-top: 4px;
@@ -45,6 +51,11 @@
     &:focus {
       outline: var(--accent-color) solid 1px;
     }
+
+  // Mobil
+    @media screen and (min-width: 1200px) {
+      width: 448px
+    }  
   }
   
   .form__icon {

@@ -1,8 +1,16 @@
 .checkbox {
     display: inline-flex;
+    align-items: flex-end;
     width: auto;
     padding-bottom: 0px;
-  }
+    font-size: 12px;
+
+
+  //Mobil
+  @media screen and (min-width: 1200px) {
+    font-size: inherit;
+  } 
+}
   
   .checkbox__input {
     width: 295px;

@@ -8,7 +8,7 @@
     }
     
     // Tablet
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768.97px) {
       display: block;
       }
 
@@ -35,7 +35,7 @@
     }
 
     // Mobil
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 32px;
         }
@@ -64,7 +64,7 @@
     }
 
     //Mobil 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 34px;
     }
       
