@@ -9,6 +9,7 @@
     margin-left: auto;
     margin-right: auto;
 
+    
     text-align: center;
     background-color: #c4c4c4;
     background-image: linear-gradient(
@@ -18,6 +19,8 @@
     
     url('/images/decoration-img/hero-mobile.jpg');
     background-size: cover;
+
+
 
     // retina
       @media (min-device-pixel-ratio: 2),
