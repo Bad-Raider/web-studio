@@ -1082,7 +1082,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .customer__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
