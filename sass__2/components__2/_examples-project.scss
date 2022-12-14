@@ -3,15 +3,22 @@
     flex-wrap: wrap;
     padding-left: 0px;
 
-    margin: -15px;
-
+  // Mobil
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
   }
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+  }
+}
 
   
 .examples-project__thumb {
     position: relative;
     overflow: hidden;
-  }
+}
   
   
 .examples-project__item {
@@ -29,6 +36,13 @@
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
+
+ // Desktop
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
     
   // Mobil
   @media screen and (max-width: 767px) {
@@ -74,6 +88,13 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
+
+    // Mobil
+    @media screen and (max-width:767px){
+      width: 450px;
+      height: 469px;
+      
+    }
   }
   
   .examples-project__link:hover .examples-project__overlay,
@@ -91,7 +112,7 @@
     letter-spacing: 0.03em;
   
     color: var(--tertiary-color-text);
-  }
+}
   
   .examples-project__wraper {
     padding-left: 24px;
@@ -103,8 +124,16 @@
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-  }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &--heigth {
+        height: 147px;
+      }
+      
+    }
+}
   
+
   .examples-project__img {
     display: block;
     width: 100%;
