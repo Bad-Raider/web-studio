@@ -9,7 +9,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    
+
     text-align: center;
     background-color: #c4c4c4;
     background-image: linear-gradient(
@@ -32,7 +32,7 @@
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-          url(/images/decoration-img/hero-mobile@2x.jpg);
+          url('/images/decoration-img/hero-mobile@2x.jpg');
       }
     }
 
@@ -45,7 +45,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
       
-      url("./images/decoration-img/hero-tablet.jpg");
+      url('/images/decoration-img/hero-tablet.jpg');
       background-size: cover;
     }  
     // retina
@@ -58,7 +58,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url("../images/decoration-img/hero-tablet@2x.jpg");
+        url('/images/decoration-img/hero-tablet@2x.jpg');
     }
   }
 
@@ -75,7 +75,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
       
-      url("../images/decoration-img/hero-desktop.jpg");
+      url("/images/decoration-img/hero-desktop.jpg");
       background-size: cover;
     }  
 
@@ -89,7 +89,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url("../images/decoration-img/hero-desktop@2x.jpg");
+        url("/images/decoration-img/hero-desktop@2x.jpg");
     }
   }
 
