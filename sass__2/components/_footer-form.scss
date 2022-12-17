@@ -21,7 +21,7 @@
   }
   
   .footer-form__input {
-    // width: 100%;
+    width: 450px;
   
     padding: 15px 16px;
     margin-top: 20px;
@@ -34,10 +34,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    // Tablet
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 480px;
-    }
+    // // Tablet
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //   width: 450px;
+    // }
     
     // Desktop
     @media screen and (min-width: 1200px) {
