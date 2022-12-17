@@ -249,6 +249,7 @@ header {
 @media screen and (min-width: 768.97px) {
   .contact {
     display: block;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -256,6 +257,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: inherit;
   }
 }
 
@@ -548,7 +550,6 @@ header {
   top: 50%;
   left: 50%;
   max-width: 90%;
-  max-height: 80%;
   padding: 40px;
   background-color: var(--primary-background-page);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -916,7 +917,9 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .section-staff__item {
-    width: 270px;
+    width: 277px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1219,7 +1222,6 @@ header {
 }
 
 .footer-form__input {
-  width: 100%;
   padding: 15px 16px;
   margin-top: 20px;
   font-size: 16px;
@@ -1228,6 +1230,11 @@ header {
   background-color: var(--tertiary-background-page);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__input {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
@@ -1328,15 +1335,19 @@ header {
 }
 
 .checkbox {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   width: auto;
   padding-bottom: 0px;
   font-size: 12px;
+}
+@media screen and (min-width: 480px) {
+  .checkbox {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox {

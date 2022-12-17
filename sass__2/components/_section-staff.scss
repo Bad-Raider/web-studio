@@ -10,7 +10,7 @@
     @media screen and (min-width: 768px) {
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     margin: -15px;
     }
   }
@@ -37,7 +37,8 @@
     }
     // desktop
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      width: 277px;
+      flex-wrap: nowrap;
     }
 
   }

@@ -10,11 +10,13 @@
     // Tablet
     @media screen and (min-width: 768.97px) {
       display: block;
+      font-size: 12px;
       }
 
     // Desktop
     @media screen and (min-width: 1200px) {
     display: flex;
+    font-size: inherit;
     }  
   }
 
