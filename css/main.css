@@ -1,3 +1,43 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* raleway-700 - latin_cyrillic */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway/raleway-v28-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway/raleway-v28-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway/raleway-v28-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway/raleway-v28-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway/raleway-v28-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway/raleway-v28-latin_cyrillic-700.svg#Raleway") format("svg"); /* Legacy iOS */
+}
 :root {
   --primary-color-text: #757575;
   --secondary-color-text: #212121;
@@ -555,7 +595,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 90%;
+  max-width: 100%;
   padding: 40px;
   background-color: var(--primary-background-page);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -567,6 +607,11 @@ header {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -644,7 +689,7 @@ header {
 
 .form__textarea {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 120px;
   margin-top: 4px;
   padding: 12px 16px;
@@ -655,6 +700,11 @@ header {
 }
 .form__textarea:focus {
   outline: var(--accent-color) solid 1px;
+}
+@media screen and (min-width: 480px) {
+  .form__textarea {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__textarea {
@@ -1234,7 +1284,7 @@ header {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-top: 20px;
   font-size: 16px;
@@ -1243,6 +1293,11 @@ header {
   background-color: var(--tertiary-background-page);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {

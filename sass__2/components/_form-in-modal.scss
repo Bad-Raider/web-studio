@@ -36,7 +36,7 @@
   
   .form__textarea {
     display: block;
-    width: 370px;
+    width: 100%;
     height: 120px;
   
     margin-top: 4px;
@@ -52,11 +52,16 @@
       outline: var(--accent-color) solid 1px;
     }
 
-  // Mobil
+  // mobil
+  @media screen and (min-width: 480px) {
+    width: 370px
+  }  
+
+  // Desktop
     @media screen and (min-width: 1200px) {
       width: 448px
     }  
-  }
+}
   
   .form__icon {
     position: absolute;
