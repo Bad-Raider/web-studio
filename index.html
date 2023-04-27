@@ -11,20 +11,18 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />  
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <!-- Контент -->
   <body>
     <header>
-      <!-- навігвція -->
+      <!-- navigations -->
       <div class="container container--flex">
         <nav class="nav">
           <!-- Logo -->
           <a href="" class="logo logo--padding"
             ><span class="logo__span">Web</span>Studio
           </a>
-
           <ul class="page-site page-site--none">
             <li class="page-site__item">
               <a href="" class="page-site__link current">Студія</a>
@@ -37,28 +35,29 @@
             </li>
           </ul>
           <!-- button open mobil menu -->
-          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg
-              width="40"
-              height="40"
-              aria-label="Кнопка виклику меню"
-            >
-              <use  class="nav__icon-burger" href="./images/decoration-img/icons.svg#icon-burger"></use>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Кнопка виклику меню">
+              <use
+                class="nav__icon-burger"
+                href="./images/decoration-img/icons.svg#icon-burger"
+              ></use>
             </svg>
           </button>
           <!-- Mobil-menu -->
-          <div class="menu-container js-menu-container " id="mobile-menu">
+          <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-              <svg
-              width="40"
-              height="40"
-              aria-label="Кнопка закриття меню"
-            >
-              <use class="nav__icon-close-cross" 
-                href="./images/decoration-img/icons.svg#icon-close-cross"
-              ></use>
-            </svg>
-            </button> 
+              <svg width="40" height="40" aria-label="Кнопка закриття меню">
+                <use
+                  class="nav__icon-close-cross"
+                  href="./images/decoration-img/icons.svg#icon-close-cross"
+                ></use>
+              </svg>
+            </button>
             <ul class="page-site">
               <li class="page-site__item">
                 <a href="" class="page-site__link current">Студія</a>
@@ -72,16 +71,21 @@
             </ul>
             <ul class="contact">
               <li class="contact__item">
-                <a href="tel:+380662408401" class="contact__link contact__link--color ">
+                <a
+                  href="tel:+380662408401"
+                  class="contact__link contact__link--color"
+                >
                   <span>+38 066 240 84 01</span></a
                 >
               </li>
               <li class="contact__item">
-                <a href="mailto:info@devstudio.com" class="contact__link contact__link--size">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact__link contact__link--size"
+                >
                   <span>info@devstudio.com</span></a
                 >
               </li>
-
             </ul>
             <ul class="social-network--container">
               <li class="social-network__item--container">
@@ -90,7 +94,7 @@
                   href="http://instagram/com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                >Instagram
+                  >Instagram
                 </a>
               </li>
               <li class="social-network__item--container">
@@ -99,7 +103,7 @@
                   href="http://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                >Twitter
+                  >Twitter
                 </a>
               </li>
               <li class="social-network__item--container">
@@ -108,7 +112,7 @@
                   href="http://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                >Facebook
+                  >Facebook
                 </a>
               </li>
               <li class="social-network__item--container">
@@ -117,13 +121,12 @@
                   href="http://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                >LinkedIn
+                  >LinkedIn
                 </a>
               </li>
             </ul>
-            </div> 
+          </div>
         </nav>
-
         <ul class="contact contact--none">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
@@ -139,7 +142,7 @@
               <svg class="contact__icon" width="10" height="16">
                 <use href="./images/decoration-img/icons.svg#icon-phone"></use>
               </svg>
-              <span>+38 096 111 11 11</span></a
+              <span>+38 066 240 84 01</span></a
             >
           </li>
         </ul>
@@ -147,7 +150,6 @@
     </header>
     <main>
       <!-- hero -->
-
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -163,9 +165,7 @@
                   ></use>
                 </svg>
               </button>
-
-              <!-- форма модального вікна  -->
-
+              <!-- modal form -->
               <form class="form">
                 <h2 class="form__title">
                   Залиште свої дані, ми вам передзвонимо
@@ -181,7 +181,7 @@
                 </label>
                 <label class="form__label">
                   Телефон
-                  <input type="text" class="form__intup" />
+                  <input  type="text" class="form__intup" required/>
                   <svg class="form__icon" width="18" height="18">
                     <use
                       href="./images/decoration-img/icons.svg#icon-phone-form"
@@ -190,7 +190,7 @@
                 </label>
                 <label class="form__label">
                   Пошта
-                  <input type="mail" class="form__intup" />
+                  <input type="mail" class="form__intup" required />
                   <svg class="form__icon" width="18" height="18">
                     <use
                       href="./images/decoration-img/icons.svg#icon-email-form"
@@ -228,12 +228,8 @@
           </div>
         </div>
       </section>
-
-      <!-- Переваги компанії -->
-
       <section class="section advantage">
         <div class="container">
-          <!-- Цей заголовок буде схований з допомогою CSS -->
           <h2 class="advantage__title visually-hidden">
             Переваги компанії WebStudio
           </h2>
@@ -268,9 +264,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- чим ми займаємося (картинки) -->
-
       <section class="section section-project">
         <div class="container">
           <h2 class="section-project__title">Чим ми займаємося</h2>
@@ -287,7 +280,6 @@
                   src="./images/other/computer-300.jpg"
                   alt="Комп'ютер"
                 />
-
                 <p class="section-project__text">Десктопні додатки</p>
               </div>
             </li>
@@ -324,9 +316,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- команда працівників -->
-
+      <!-- staff section -->
       <section class="section section-staff section-staff--background-color">
         <div class="container">
           <h2 class="section-staff__title">Наша команда</h2>
@@ -420,9 +410,7 @@
             <li class="section-staff__item">
               <img
                 class="section-staff__img"
-                srcset="
-                  ./images/staff/sasha-300.jpg 300w,
-                "
+                srcset="./images/staff/sasha-300.jpg 300w"
                 sizes="370px"
                 src="./images/staff/sasha-300.jpg"
                 alt="Фотографія Олександри Лутицької"
@@ -679,9 +667,7 @@
           </ul>
         </div>
       </section>
-
       <!-- Our Customers -->
-
       <section class="section customer">
         <div class="container">
           <h2 class="customer__title">Постійні клієнти</h2>
@@ -691,7 +677,8 @@
                 <svg class="customer__logo" width="106" height="60">
                   <use
                     href="./images/decoration-img/icons.svg#icon-ya-co"
-                  ></use></svg              ></a>
+                  ></use></svg
+              ></a>
             </li>
             <li class="customer__item">
               <a href="" class="customer__link">
@@ -742,9 +729,7 @@
         </div>
       </section>
     </main>
-
-    <!-- ===============футер============ -->
-
+    <!-- footer -->
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer__wraper">
@@ -842,6 +827,7 @@
               class="footer-form__input"
               name="email"
               placeholder="Email"
+              required
             />
             <button type="submit" class="footer-form__button">
               <span>Підписатися </span>
