@@ -45,6 +45,6 @@ Open the Web Page: After cloning the repository, navigate to the web-studio fold
 
 Customize as Needed: You can edit the HTML, SCSS, JavaScript, or CSS files to make changes and personalize both the landing and portfolio pages according to your requirements.
 
-Author
+**Author:**
 Stanislav Husiev
-Email: Stanislav.Gusiev@gmail.com
+**Email:** Stanislav.Gusiev@gmail.com
