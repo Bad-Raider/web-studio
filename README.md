@@ -2,42 +2,38 @@
 
 This repository contains my first project - a landing page for a web studio. I created this landing page using HTML, SCSS, and a bit of JavaScript.
 
-## Project Structure
-<div>
+<h1>Project Structure</h1>
+
+<pre>
 web-studio/
 │
-├── css/ # Compiled CSS files
-│ ├── styles.css # Main CSS file
-│ ├── ...
+├── css/
+│   ├── styles.css <span style="color: gray;"># Main CSS file</span>
+│   ├── ...
 │
-├── fonts/ # Font files
-│ ├── font1.woff
-│ ├── ...
+├── fonts/
+│   ├── font1.woff
+│   ├── ...
 │
-├── images/ # Image files
-│ ├── image1.jpg
-│ ├── ...
+├── images/
+│   ├── image1.jpg
+│   ├── ...
 │
-├── js/ # JavaScript files
-│ ├── script.js # Main JavaScript file
-│ ├── ...
+├── js/
+│   ├── script.js <span style="color: gray;"># Main JavaScript file</span>
+│   ├── ...
 │
-├── sass__2/ # SASS/SCSS source files
-│ ├── styles.scss # Main SCSS file
-│ ├── ...
+├── sass__2/
+│   ├── styles.scss <span style="color: gray;"># Main SCSS file</span>
+│   ├── ...
 │
-├── .gitignore # Git ignore file
-├── .prettier.json # Prettier configuration file
-├── README.md # This ReadMe file
-├── index.html # Main HTML file
-└── portfolio.html # Portfolio HTML file
-</div>
-## How to Deploy and Run the Project
+├── .gitignore <span style="color: gray;"># Git ignore file</span>
+├── .prettier.json <span style="color: gray;"># Prettier configuration file</span>
+├── README.md <span style="color: gray;"># This ReadMe file</span>
+├── index.html <span style="color: gray;"># Main HTML file</span>
+└── portfolio.html <span style="color: gray;"># Portfolio HTML file</span>
+</pre>
 
-1. **Clone the Repository:** Open your terminal and use the `git clone` command:
-
-   ```shell
-   git clone https://github.com/Bad-Raider/web-studio.git
 
 ## How to Deploy and Run the Project
 
