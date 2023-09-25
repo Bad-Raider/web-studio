@@ -3,7 +3,7 @@
 This repository contains my first project - a landing page for a web studio. I created this landing page using HTML, SCSS, and a bit of JavaScript.
 
 ## Project Structure
-
+<div>
 web-studio/
 │
 ├── css/ # Compiled CSS files
@@ -31,54 +31,13 @@ web-studio/
 ├── README.md # This ReadMe file
 ├── index.html # Main HTML file
 └── portfolio.html # Portfolio HTML file
-
+</div>
 ## How to Deploy and Run the Project
 
 1. **Clone the Repository:** Open your terminal and use the `git clone` command:
 
    ```shell
    git clone https://github.com/Bad-Raider/web-studio.git
-
-Ось ваш HTML-код переписаний у форматі Markdown:
-
-markdown
-Copy code
-# Web Studio Landing Page
-
-This repository contains my first project - a landing page for a web studio. I created this landing page using HTML, SCSS, and a bit of JavaScript.
-
-## Project Structure
-
-web-studio/
-│
-├── css/ # Compiled CSS files
-│ ├── styles.css # Main CSS file
-│ ├── ...
-│
-├── fonts/ # Font files
-│ ├── font1.woff
-│ ├── ...
-│
-├── images/ # Image files
-│ ├── image1.jpg
-│ ├── ...
-│
-├── js/ # JavaScript files
-│ ├── script.js # Main JavaScript file
-│ ├── ...
-│
-├── sass__2/ # SASS/SCSS source files
-│ ├── styles.scss # Main SCSS file
-│ ├── ...
-│
-├── .gitignore # Git ignore file
-├── .prettier.json # Prettier configuration file
-├── README.md # This ReadMe file
-├── index.html # Main HTML file
-└── portfolio.html # Portfolio HTML file
-
-bash
-Copy code
 
 ## How to Deploy and Run the Project
 
