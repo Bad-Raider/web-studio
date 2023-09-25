@@ -1,6 +1,9 @@
 # Web Studio Landing Page
 
 This repository contains my first project - a landing page for a web studio. I created this landing page using HTML, SCSS, and a bit of JavaScript.
+- HTML
+- CSS (SCSS)
+- JavaScript
 
 <h1>Project Structure</h1>
 
